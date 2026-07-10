@@ -49,6 +49,7 @@ islove = true;
 islove = 99;
 
 console.log(islove);
+console.log(islove.typeof(bool))
 
 
 
@@ -165,4 +166,3 @@ console.log(a);
      a = 90;
      console.log(a);
 }
-
