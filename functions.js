@@ -1,5 +1,5 @@
 function add(){
-    console.log("I love aakruti");
+    console.log("I love someone");
 }
 
 add();
@@ -24,4 +24,4 @@ let propose = (msg)=>{
     console.log(msg);
 }
 
-propose("I love you Aakruti");
+propose("I love someone");
