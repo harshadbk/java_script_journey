@@ -46,3 +46,6 @@ function getData(dataId,getNextData){
 
   getalldata();
 
+  console.log("i likes js")
+  console.log("i likes py")
+

@@ -8,6 +8,8 @@ console.log(typeof a);
 let price = 90.87;
 console.log(typeof price);
 
+console.log("majid");
+
 // 2 String
 
 let name;

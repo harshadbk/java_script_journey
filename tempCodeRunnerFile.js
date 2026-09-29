@@ -1,8 +1,5 @@
-function add(...nums){
-    for(let num of nums){
-        sum += num;
-    }
-    console.log(sum);
+function capitalize(name){
+    return name.charAt(0).toUpperCase() + name.slice(1);
 }
 
-add(12,3,4,5,6,7,18);
+console.log(capitalize("harshad"));

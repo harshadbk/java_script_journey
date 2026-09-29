@@ -32,16 +32,16 @@ another operation, leading to deeply nested callback functions.
 // })
 
 
-function getData(dataId,getNextData){
-  return new Promise((resolve,reject)=>{ 
-  setTimeout(()=>{                          // we solve this problem by using promise chain
-      console.log("Data",dataId);
-      resolve("Success");
-      if(getNextData){
-          getNextData();
-      }
-  },2000);
-});
+function getData(dataId, getNextData) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => { // we solve this problem by using promise chain
+            console.log("Data", dataId);
+            resolve("Success");
+            if (getNextData) {
+                getNextData();
+            }
+        }, 2000);
+    });
 }
 
 // getData(1).then((res)=>{
@@ -51,12 +51,12 @@ function getData(dataId,getNextData){
 //     })
 // })
 
-getData(1).then((res)=>{
-    return getData(2);
-})
-.then((res)=>{
-    return getData(3);
-})
-.then((res)=>{
-    console.log(res);
-})
+getData(1).then((res) => {
+        return getData(2);
+    })
+    .then((res) => {
+        return getData(3);
+    })
+    .then((res) => {
+        console.log(res);
+    })
